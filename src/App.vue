@@ -1,7 +1,11 @@
 <template>
 	<div id="app">
-		<img width=200 src="./assets/logo.png">
-		<router-view></router-view>
+    <h3>Example Vue Router App</h3>
+    <router-link to="/">Clap</router-link>
+    <router-link to="/links">Links</router-link>
+    <div class="viewWrap">
+		  <router-view></router-view>
+    </div>
 	</div>
 </template>
 
@@ -20,4 +24,7 @@
 		color: #2c3e50;
 		margin-top: 60px;
 	}
+  .viewWrap {
+    padding-top: 20px;
+  }
 </style>
